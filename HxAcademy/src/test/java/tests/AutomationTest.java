@@ -6,9 +6,9 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import pages.CommonConditions;
-import pages.PageComplicatedButtons;
-import pages.PageComplicatedRandomStuff;
-import pages.PageComplicatedSocialMedia;
+import pages.SectionComplicatedButtons;
+import pages.SectionComplicatedRandomStuff;
+import pages.SectionComplicatedSocialMedia;
 import pages.PageHome;
 
 public class AutomationTest extends CommonConditions {
@@ -28,52 +28,55 @@ public class AutomationTest extends CommonConditions {
 
             System.out.println("Error: " + e.getMessage());
         }
-        assertTrue("El titulo de la pagina no es el esperado.", pageHome.getTitle());
+        assertTrue("Title is not matching with expected value.", pageHome.getTitle());
     }
 
     @Test
     public void ButtonsSection() throws InterruptedException, ParseException {
 
-        PageComplicatedButtons pageComplicatedButtons = new PageComplicatedButtons(driver);
+        SectionComplicatedButtons sectionComplicatedButtons = new SectionComplicatedButtons(driver);
 
-        Assert.assertEquals("Section of Buttons", pageComplicatedButtons.buttonsText());
+        Assert.assertEquals("Section of Buttons", sectionComplicatedButtons.buttonsText());
 
-        Assert.assertEquals("Section of Social Media Follows", pageComplicatedButtons.socialMediaText());
+        Assert.assertEquals("Section of Social Media Follows", sectionComplicatedButtons.socialMediaText());
 
-        Assert.assertEquals("Section of Random Stuff", pageComplicatedButtons.randomStuffText());
+        Assert.assertEquals("Section of Random Stuff", sectionComplicatedButtons.randomStuffText());
 
-        pageComplicatedButtons.clickToAllButtons();
+        sectionComplicatedButtons.clickToAllButtons();
 
     }
 
     @Test
     public void SocialMediaSection() {
 
-        PageComplicatedSocialMedia pageComplicatedSocialMedia = new PageComplicatedSocialMedia(driver);
+        SectionComplicatedSocialMedia sectionComplicatedSocialMedia = new SectionComplicatedSocialMedia(driver);
 
-        int socialMediaSize = pageComplicatedSocialMedia.SocialMediaElements();
-        Assert.assertTrue("No se encontraron elementos.", socialMediaSize > 0);
+        int socialMediaSize = sectionComplicatedSocialMedia.SocialMediaElements();
+        Assert.assertTrue("Elements not found.", socialMediaSize > 0);
 
     }
 
     @Test
     public void RandomStuffSection() throws InterruptedException {
 
-        PageComplicatedRandomStuff pageComplicatedRandomStuff = new PageComplicatedRandomStuff(driver);
-        String VALOR = pageComplicatedRandomStuff.captchaValue();
-        pageComplicatedRandomStuff.text("Pedro", "berna@gmail.com", "Hola!!!", VALOR);
+        SectionComplicatedRandomStuff sectionComplicatedRandomStuff = new SectionComplicatedRandomStuff(driver);
+        String VALOR = sectionComplicatedRandomStuff.captchaValue();
+        sectionComplicatedRandomStuff.text("Pedro Bernabe Quiros", "bernabe.q@gmail.com",
+                "Hola, este es un mensaje de prueba.", VALOR);
         Thread.sleep(2000);
-        Assert.assertEquals("Thanks for contacting us", pageComplicatedRandomStuff.successMessage());
+        Assert.assertEquals("Thanks for contacting us", sectionComplicatedRandomStuff.successMessage());
 
     }
 
     @Test
     public void RandomStuffSection_FAILED() throws InterruptedException {
-        PageComplicatedRandomStuff pageComplicatedRandomStuff = new PageComplicatedRandomStuff(driver);
-        String VALOR = pageComplicatedRandomStuff.captchaValue();
-        pageComplicatedRandomStuff.text("Pedro", "berna@gmail.com", "Hola!!!", VALOR);
+        SectionComplicatedRandomStuff sectionComplicatedRandomStuff = new SectionComplicatedRandomStuff(driver);
+        String VALOR = sectionComplicatedRandomStuff.captchaValue();
+        sectionComplicatedRandomStuff.text("Pedro Bernabe Quiros", "bernabe.q@gmail.com",
+                "Hola, este es un mensaje de prueba.", VALOR);
         Thread.sleep(2000);
-        Assert.assertEquals("NO ES EL TEXTO QUE ESPERAMOS", pageComplicatedRandomStuff.successMessage());
+        Assert.assertEquals("This should fail!",
+                sectionComplicatedRandomStuff.successMessage());
 
     }
 }

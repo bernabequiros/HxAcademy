@@ -23,5 +23,8 @@ dependencies {
     // https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adapter
     implementation 'tech.grasshopper:extentreports-cucumber6-adapter:2.8.3'
     // https://mvnrepository.com/artifact/commons-io/commons-io
-    implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'   
+    implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+    // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+   
 }

@@ -1,6 +1,5 @@
 package pages;
 
-
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
@@ -15,8 +14,8 @@ public class CommonConditions {
 	@Before
 	public void setUp() {
 
-		// CONFIGURACION PARA USAR MULTIPLES NAVEGADORES:
-		String browser_to_use = "Chrome"; // Opciones de navegador: "Chrome", "Firefox", "Edge"
+		// BROWSER CONFIGURATION:
+		String browser_to_use = "Chrome"; // Options: "Chrome", "Firefox", "Edge"
 
 		if (browser_to_use == "Chrome") {
 			System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
@@ -42,7 +41,7 @@ public class CommonConditions {
 			System.out.println("ERROR: The name of the browser driver could not be found.");
 		}
 
-		// FIN DE CONFIGURACION NAVEGADOR
+		// ------- END CONFIGURATION -------
 
 	}
 

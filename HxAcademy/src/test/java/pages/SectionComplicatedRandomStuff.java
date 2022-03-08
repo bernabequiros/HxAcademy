@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class PageComplicatedRandomStuff {
+public class SectionComplicatedRandomStuff {
 
     private WebDriver driver;
     private By nameInput;
@@ -14,7 +14,7 @@ public class PageComplicatedRandomStuff {
     private By submitButton;
     private By succesMessageText;
 
-    public PageComplicatedRandomStuff(WebDriver driver) {
+    public SectionComplicatedRandomStuff(WebDriver driver) {
         this.driver = driver;
 
         nameInput = By.id("et_pb_contact_name_0");

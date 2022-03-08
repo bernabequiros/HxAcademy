@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.AutomationTest" tests="4" skipped="0" failures="1" errors="0" timestamp="2022-03-04T20:58:43" hostname="HXNB-856" time="27.879">
+<testsuite name="tests.AutomationTest" tests="4" skipped="0" failures="1" errors="0" timestamp="2022-03-08T13:17:19" hostname="HXNB-856" time="24.12">
   <properties/>
-  <testcase name="SocialMediaSection" classname="tests.AutomationTest" time="5.854"/>
-  <testcase name="RandomStuffSection_FAILED" classname="tests.AutomationTest" time="8.147">
-    <failure message="org.junit.ComparisonFailure: expected:&lt;[NO ES EL TEXTO QUE ESPERAMOS]&gt; but was:&lt;[Thanks for contacting us]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[NO ES EL TEXTO QUE ESPERAMOS]&gt; but was:&lt;[Thanks for contacting us]&gt;
+  <testcase name="SocialMediaSection" classname="tests.AutomationTest" time="5.408"/>
+  <testcase name="RandomStuffSection_FAILED" classname="tests.AutomationTest" time="7.591">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;[Message is not matching with expected value.]&gt; but was:&lt;[Thanks for contacting us]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[Message is not matching with expected value.]&gt; but was:&lt;[Thanks for contacting us]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
-	at tests.AutomationTest.RandomStuffSection_FAILED(AutomationTest.java:76)
+	at tests.AutomationTest.RandomStuffSection_FAILED(AutomationTest.java:78)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,74 +54,74 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="RandomStuffSection" classname="tests.AutomationTest" time="7.313"/>
-  <testcase name="ButtonsSection" classname="tests.AutomationTest" time="6.565"/>
-  <system-out><![CDATA[Elemento 1 esta habilitado?: PASSED.
-Elemento 2 esta habilitado?: PASSED.
-Elemento 3 esta habilitado?: PASSED.
-Elemento 4 esta habilitado?: PASSED.
-Elemento 5 esta habilitado?: PASSED.
-Elemento 6 esta habilitado?: PASSED.
-Elemento 7 esta habilitado?: PASSED.
-Elemento 8 esta habilitado?: PASSED.
-Elemento 9 esta habilitado?: PASSED.
-Elemento 10 esta habilitado?: PASSED.
-Click boton:0
-Click boton:1
-Click boton:2
-Click boton:3
-Click boton:4
-Click boton:5
-Click boton:6
-Click boton:7
-Click boton:8
-Click boton:9
-Click boton:10
-Click boton:11
+  <testcase name="RandomStuffSection" classname="tests.AutomationTest" time="7.103"/>
+  <testcase name="ButtonsSection" classname="tests.AutomationTest" time="4.018"/>
+  <system-out><![CDATA[Element 1 is enabled?: PASSED.
+Element 2 is enabled?: PASSED.
+Element 3 is enabled?: PASSED.
+Element 4 is enabled?: PASSED.
+Element 5 is enabled?: PASSED.
+Element 6 is enabled?: PASSED.
+Element 7 is enabled?: PASSED.
+Element 8 is enabled?: PASSED.
+Element 9 is enabled?: PASSED.
+Element 10 is enabled?: PASSED.
+Button 0 is enabled?: PASSED.
+Button 1 is enabled?: PASSED.
+Button 2 is enabled?: PASSED.
+Button 3 is enabled?: PASSED.
+Button 4 is enabled?: PASSED.
+Button 5 is enabled?: PASSED.
+Button 6 is enabled?: PASSED.
+Button 7 is enabled?: PASSED.
+Button 8 is enabled?: PASSED.
+Button 9 is enabled?: PASSED.
+Button 10 is enabled?: PASSED.
+Button 11 is enabled?: PASSED.
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 52492
+  <system-err><![CDATA[Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 62071
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1646427525.995][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
-Mar 04, 2022 5:58:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1646745441.635][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+Mar 08, 2022 10:17:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Mar 04, 2022 5:58:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 08, 2022 10:17:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
-Mar 04, 2022 5:58:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 08, 2022 10:17:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 99 of 97
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 55399
+Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 55375
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1646427530.898][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
-Mar 04, 2022 5:58:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1646745446.259][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+Mar 08, 2022 10:17:26 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Mar 04, 2022 5:58:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 08, 2022 10:17:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
-Mar 04, 2022 5:58:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 08, 2022 10:17:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 99 of 97
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 56163
+Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 55577
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1646427539.060][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
-Mar 04, 2022 5:58:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1646745453.850][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+Mar 08, 2022 10:17:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Mar 04, 2022 5:58:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 08, 2022 10:17:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
-Mar 04, 2022 5:58:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 08, 2022 10:17:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 99 of 97
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 57755
+Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 62181
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1646427546.373][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
-Mar 04, 2022 5:59:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1646745460.957][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+Mar 08, 2022 10:17:40 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Mar 04, 2022 5:59:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 08, 2022 10:17:41 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
-Mar 04, 2022 5:59:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 08, 2022 10:17:41 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 99 of 97
 ]]></system-err>
 </testsuite>

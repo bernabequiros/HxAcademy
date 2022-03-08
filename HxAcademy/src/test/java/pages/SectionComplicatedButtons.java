@@ -2,14 +2,16 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
-public class PageComplicatedButtons {
+public class SectionComplicatedButtons {
+
     private WebDriver driver;
     private By sectionButtons;
     private By sectionSocialMedia;
     private By sectionRandomStuff;
 
-    public PageComplicatedButtons(WebDriver driver) {
+    public SectionComplicatedButtons(WebDriver driver) {
         this.driver = driver;
 
         sectionButtons = By.id("Section_of_Buttons");
@@ -36,12 +38,18 @@ public class PageComplicatedButtons {
     }
 
     public void clickToAllButtons() {
+        int buttonNumber = 0;
+        while (buttonNumber <= 11) {
 
-        for (int buttonNumber = 0; buttonNumber <= 11; buttonNumber++) {
+            WebElement e = driver.findElement(
+                    By.xpath("//*[@class='et_pb_button et_pb_button_" + buttonNumber + " et_pb_bg_layout_light']"));
 
-            driver.findElement(
-                    By.xpath("//*[@class='et_pb_button et_pb_button_" + buttonNumber + " et_pb_bg_layout_light']")).click();
-            System.out.println("Click boton:" + buttonNumber);
+            if (e.isEnabled()) {
+                System.out.println("Button " + buttonNumber + " is enabled?: PASSED.");
+            } else {
+                throw new Error("Button " + buttonNumber + " is enabled?: FAILED!");
+            }
+            buttonNumber++;
 
         }
 
